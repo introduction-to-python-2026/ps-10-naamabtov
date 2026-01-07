@@ -2,9 +2,6 @@ from PIL import Image
 import numpy as np
 from scipy.signal import convolve2d
 
-def load_image(path):
-    import numpy as np
-from PIL import Image
 
 def load_image(path):
     image = Image.open(path).convert("RGB")
