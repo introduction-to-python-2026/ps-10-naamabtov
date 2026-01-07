@@ -12,13 +12,7 @@ def load_image(path):
 from scipy.signal import convolve2d
 
 def edge_detection(image):
-    """
-    Perform edge detection on a color image.
-    """
-    # Convert RGB → grayscale
     gray = image.mean(axis=2)
-
-    # Sobel filters
     filter_vertical = np.array([
         [-1, 0, 1],
         [-2, 0, 2],
