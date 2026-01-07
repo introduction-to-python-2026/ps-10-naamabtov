@@ -10,15 +10,15 @@ def edge_detection(image):
     gray = image.mean(axis=2)
 
     vertical_filter = np.array([
-        [-1, 0, 1],
-        [-2, 0, 2],
-        [-1, 0, 1]
+        [1, 1, 1],
+        [0, 0, 0],
+        [-1, -1, -1]
     ])
 
     horizontal_filter = np.array([
-        [-1, -2, -1],
-        [ 0,  0,  0],
-        [ 1,  2,  1]
+        [1,   0, -1],
+        [ 1,  0,  -1],
+        [ 1,  0,  -1]
     ])
 
     edgeX = convolve2d(gray, horizontal_filter,
