@@ -3,7 +3,7 @@ from PIL import Image
 from scipy.signal import convolve2d
 
 def load_image(path):
-    image = Image.open(path).convert("RGB")
+    image = Image.open(path)
     return np.array(image)
 
 def edge_detection(image):
