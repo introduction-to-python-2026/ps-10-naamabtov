@@ -4,7 +4,7 @@ from scipy.signal import convolve2d
 
 
 def load_image(path):
-    image = np.open(path)
+    image = image.open(path)
     return np.array(image)
 
 
