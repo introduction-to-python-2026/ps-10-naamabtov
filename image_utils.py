@@ -7,7 +7,7 @@ def load_image(path):
     image = Image.open(path).convert("RGB")
     return np.array(image)
 
-def edge_detection(image):
+
     import numpy as np
 from scipy.signal import convolve2d
 
